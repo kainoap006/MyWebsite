@@ -24,9 +24,9 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
 									<ul class="icons">
+										<li><a href="https://github.com/kainoap006?tab=repositories&q=&type=public&language=&sort=" class="icon brands fa-github" target="_blank"><span class="label">github</span></a></li>	
 										<li><a href="https://www.instagram.com/kainoapotter/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 										<li><a href="https://www.linkedin.com/in/kainoa-potter-744271229/" class="icon brands fa-linkedin" target="_blank"><span class="label">linkedin</span></a></li>
-										<li><a href="https://github.com/kainoap006?tab=repositories&q=&type=public&language=&sort=" class="icon brands fa-github" target="_blank"><span class="label">github</span></a></li>	
 									</ul>
 								</header>
 
@@ -95,23 +95,23 @@
 											<h3>Did Taylor Swift and Travis Kelce's relationship impact the NFL?</h3>
 											<p>This is our findings from a group project I was apart of at UCSD for a data science class. We used web scraping to collect the data and python to analyze that data.</p>
 											<ul class="actions">
-												<li><a href="https://drive.google.com/file/d/1uAH65YAr1ltziz3f6_UD6cgp58VafHge/view?usp=drive_link" class="button" target="_blank">More</a></li>
+												<li><a href="data_Science_Project.html" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/Ball_Project_Image.png" alt="" /></a>
+											<a href="openGL.html" class="image"><img src="images/Ball_Project_Image.png" alt="" /></a>
 											<h3>Physics Simulation</h3>
 											<p>This is an OpenGL project I worked on to explore computer graphics. It is a simulation where you can control many aspects of the environment such as gravity, number of spheres, etc. I had a ton of fun making this one!</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="openGL.html" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/Android_project_IDE_image.png" alt="" /></a>
+											<a href="friend_Compasss.html" class="image"><img src="images/Android_project_IDE_image.png" alt="" /></a>
 											<h3>Find your Friend Compass</h3>
 											<p>This comes from a group project at UCSD for our software engineering class. The app stores your friends locations and displays the direction and distance that they are from you on a compass.</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="friend_Compasss.html" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
@@ -119,15 +119,15 @@
 											<h3>Series of Lessons</h3>
 											<p>A small series of videos made by me showing key computer science concepts and how to apply them within the popular blocks-based programming language: Snap!</p>
 											<ul class="actions">
-												<li><a href="https://sites.google.com/view/kainoasportfolio/home?authuser=0" class="button" target="blank">More</a></li>
+												<li><a href="educationPortfolio.html" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<a href="ongoing.html" class="image"><img src="images/under-construction.jpg" alt="" /></a>
 											<h3>Ongoing Project</h3>
 											<p>Currently working on this project. Will add once completed.</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="ongoing.html" class="button">More</a></li>
 											</ul>
 										</article>
 										<!-- <article>
@@ -153,7 +153,7 @@
 								<!-- <form method="post" action="#">
 									<input type="text" name="query" id="query" placeholder="Search" />
 								</form> -->
-								<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search" title="Type in a category">
+								<input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search" title="Type in a category">
 							</section>
 
 						<!-- Menu -->
@@ -180,7 +180,7 @@
 											<li><a href="ongoing.html">Ongoing Projects</a></li>
 										</ul>
 									</li>
-									<li style="display: none"><a href="about_Me.html">About Me</a></li>
+									<li><a href="about_Me.html">About Me</a></li>
 								</ul>
 							</nav>
 							<section>
@@ -188,8 +188,7 @@
 									<h2>Get in touch</h2>
 								</header>
 								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="mailto: potterkainoa@gmail.com">potterkainoa@gmail.com</a></li>
-									<li class="icon solid fa-envelope"><a href="send_Message.html">Send a Message</a></li>
+									<li class="icon solid fa-envelope"><a href="mailto:potterkainoa@gmail.com">potterkainoa@gmail.com</a></li>
 									<!-- <li class="icon solid fa-phone">(000) 000-0000</li>
 									<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
 									Nashville, TN 00000-0000</li> -->
@@ -200,7 +199,6 @@
 							<footer id="footer">
 								<p class="copyright">&copy; Kainoa Potter. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 							</footer>
-
 					</div>
 				</div>
 			</div>
@@ -211,26 +209,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				function myFunction() {
-					// Declare variables
-					var input, filter, ul, li, a, i;
-					input = document.getElementById("mySearch");
-					filter = input.value.toUpperCase();
-					ul = document.getElementById("myMenu");
-					li = ul.getElementsByTagName("li");
-
-					// Loop through all list items, and hide those who don't match the search query
-					for (i = 0; i < li.length; i++) {
-						a = li[i].getElementsByTagName("a")[0];
-						if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-							li[i].style.display = "";
-						} else {
-							li[i].style.display = "none";
-						}
-					}
-				}
-			</script>
 
 	</body>
 </html>

@@ -24,9 +24,9 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
 									<ul class="icons">
+										<li><a href="https://github.com/kainoap006?tab=repositories&q=&type=public&language=&sort=" class="icon brands fa-github" target="_blank"><span class="label">github</span></a></li>	
 										<li><a href="https://www.instagram.com/kainoapotter/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 										<li><a href="https://www.linkedin.com/in/kainoa-potter-744271229/" class="icon brands fa-linkedin" target="_blank"><span class="label">linkedin</span></a></li>
-										<li><a href="https://github.com/kainoap006?tab=repositories&q=&type=public&language=&sort=" class="icon brands fa-github" target="_blank"><span class="label">github</span></a></li>	
 									</ul>
 								</header>
 
@@ -105,9 +105,10 @@
 
 						<!-- Search -->
 							<section id="search" class="alt">
-								<form method="post" action="#">
+								<!-- <form method="post" action="#">
 									<input type="text" name="query" id="query" placeholder="Search" />
-								</form>
+								</form> -->
+								<input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Search" title="Type in a category">
 							</section>
 
 						<!-- Menu -->
@@ -115,7 +116,7 @@
 								<header class="major">
 									<h2>Menu</h2>
 								</header>
-								<ul>
+								<ul id="myMenu">
 									<li><a href="index.html">Homepage</a></li>
 									<li>
 										<span class="opener">Work Experience</span>
@@ -142,8 +143,7 @@
 									<h2>Get in touch</h2>
 								</header>
 								<ul class="contact">
-									<li class="icon solid fa-envelope"><a href="mailto: potterkainoa@gmail.com">potterkainoa@gmail.com</a></li>
-									<li class="icon solid fa-envelope"><a href="send_Message.html">Send a Message</a></li>
+									<li class="icon solid fa-envelope"><a href="mailto:potterkainoa@gmail.com">potterkainoa@gmail.com</a></li>
 									<!-- <li class="icon solid fa-phone">(000) 000-0000</li>
 									<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
 									Nashville, TN 00000-0000</li> -->
@@ -154,7 +154,6 @@
 							<footer id="footer">
 								<p class="copyright">&copy; Kainoa Potter. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 							</footer>
-
 					</div>
 				</div>
 				
