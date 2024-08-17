@@ -1,1 +1,1 @@
-Simple ReadMe
+aws s3 sync html5up-editorial s3://kainoapotter.click/ --delete
